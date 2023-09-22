@@ -134,6 +134,6 @@ resource "aws_instance" "diamond_dogs" {
   })
 
   tags = {
-    Name = "${var.prefix}-diamond_dogs-instance"
+    Name = "${var.prefix}-diamond_dogs-instance-${var.environment}"
   }
 }
